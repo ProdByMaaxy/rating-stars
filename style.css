@@ -1,5 +1,4 @@
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,7 +21,8 @@ ul{
     max-width: 100%;
     display: flex;
     align-items: center;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.395);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.395);
+    border-radius: 5px;
 }
 .logo-container{
     width: 200px;
@@ -30,6 +30,13 @@ ul{
 .logo{
     width: 100%;
     height: auto;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.1);
 }
 .nav-bar{
     width: 100%;
@@ -44,6 +51,13 @@ ul{
 }
 .nav-links li{
     padding: 10px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.nav-links li:hover{
+    transform: translateY(-2px);
 }
 .nav-links a{
     color: #264653;
@@ -51,13 +65,146 @@ ul{
 .nav-links a:hover{
     color: #B5C99A;
 }
-.notation-container{
-    margin-top: 200px;
-    border: 1px solid #264653;
-    border-radius: 5px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.395);
-    width: 80%;
+.main-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.241);
+    gap: 50px;
+}
+/* CSS right container */
+.right-container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 #room{
-    width: 50%;
+    width: 100%;
+    height: auto;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#room:hover{
+    transform: scale(1.01);
+}
+.room-information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.room-information h2{
+    font-size:24px;
+    font-weight: bold;
+    color:#264653;
+    margin: 0;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.room-information li{
+    font-size:20px;
+    font-weight: 500;
+    color:#264653;
+    margin-bottom: 10px;
+}
+
+/* CSS left container */
+
+.left-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.rating-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.rating-box h1{
+    font-size:24px;
+    font-weight: bold;
+    color:#264653;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.rating-box h2{
+    font-size:22px;
+    font-weight: 500;
+    color:#b7b5b5;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.rating-box .stars{
+    display: flex;
+    gap : 10px;
+    padding: 10px;
+}
+.stars i{
+    color:#e6e6e6;
+    font-size: 26px;
+    cursor: pointer;
+
+}
+.review-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.review-box form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.review-box textarea{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    resize: none;
+    transition: border-color 0.5s;
+}
+.review-box textarea:focus{
+    outline: none;
+    border-color: #B5C99A;
+}
+.review-box textarea::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #e6e6e6;
+    align-items: flex-start;
+}
+.review-box button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #B5C99A;
+    color: #F5F3E7;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s;
+}
+.review-box button:hover{
+    background-color: #A0B383;
 }

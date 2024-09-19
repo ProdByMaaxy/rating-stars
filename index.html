@@ -7,6 +7,7 @@
     <link rel="icon" href="image/travelia.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -21,16 +22,42 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="stays.html">Stays</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div>
-            <div class="notation-container">
-                <img id="room" src="image/chamber.jpg" alt="Chamber">
+        <div class="main-container">
+            <div class="right-container">
+                <div>
+                    <img id="room" src="image/chamber.jpg" alt="Room">
+                    <div class="room-information">
+                        <h2>Information : </h2>
+                        <ul>
+                            <li>Price : 175$</li>
+                            <li>Location : Paris - France</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="left-container">
+                <div class="rating-box">
+                    <h1>Tell us what do you think about your stay 🌟💬🏡</h2>
+                    <h2>How was your experience ?</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <form action="review.php" method="POST">
+                        <textarea name="review" placeholder="Write your review here" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
         </div>
     </main>
 </body>
