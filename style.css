@@ -149,14 +149,22 @@ ul{
 }
 .rating-box .stars{
     display: flex;
-    gap : 10px;
+    gap : 25px;
     padding: 10px;
 }
 .stars i{
     color:#e6e6e6;
-    font-size: 26px;
+    font-size: 40px;
     cursor: pointer;
+    transition: color 0.5s;
 
+}
+.stars i:hover{
+    color:#efbd16;
+}
+/* CSS for active class in JS */
+.stars i.active{
+    color:#efbd16;
 }
 .review-box{
     display: flex;
