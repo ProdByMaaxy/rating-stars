@@ -157,14 +157,13 @@ ul{
     font-size: 40px;
     cursor: pointer;
     transition: color 0.5s;
-
 }
 .stars i:hover{
-    color:#efbd16;
+    color:#F4D03F;
 }
 /* CSS for active class in JS */
 .stars i.active{
-    color:#efbd16;
+    color:#F4D03F;
 }
 .review-box{
     display: flex;
@@ -183,7 +182,6 @@ ul{
     height: 300px;
     padding: 10px;
     font-size: 20px;
-    font-weight: 500;
     border-radius: 10px;
     border: 1px solid #e6e6e6;
     margin-bottom: 20px;
